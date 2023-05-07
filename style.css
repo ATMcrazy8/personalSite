@@ -1,0 +1,51 @@
+/*Global*/
+
+
+
+/*Elements*/
+html {
+    display: flex;
+    flex-flow: column nowrap;  
+    margin: 0;
+}
+
+head, body {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+body {
+    justify-content: space-evenly;
+    margin: 0 15% 0 15%;
+}
+
+
+/*Attributes*/
+
+
+
+/*Classes*/
+.header {
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+}
+
+.navBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    height: 400px;
+}
+
+
+/*IDs*/
+
+
