@@ -1,2 +1,2 @@
 # personalSite
-Area for creating my own content
+Area for creating and storing my content, for testing new ideas, and to self-promote.
