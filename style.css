@@ -1,0 +1,112 @@
+/*Global*/
+
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/*Elements*/
+html {
+    display: flex;
+    flex-flow: column nowrap;  
+    margin: 0;
+}
+
+head, body {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+body {
+    justify-content: space-evenly;
+    margin: 0 15% 0 15%;
+}
+
+h1 {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*Attributes*/
+
+
+
+/*Classes*/
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0 0 40px 0;
+}
+
+img.header {
+    justify-content: flex-start;
+}
+
+.header.navBar {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navBar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 400px;
+}
+
+.right {
+    align-items: flex-end;
+}
+
+.left {
+    align-items: flex-start;
+}
+
+.container.top {
+    justify-content:space-around;
+    height: 15vh;
+    padding: 0 0 30vh 0;
+}
+
+/*IDs*/
+
+#amLogo {
+    height: 80px;
+    width: 80px;
+}
