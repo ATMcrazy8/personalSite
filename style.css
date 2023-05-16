@@ -44,16 +44,6 @@ h2 {
     padding: 0;
 }
 
-h3 {
-    display: flex;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: 0;
-    padding: 0;
-}
-
 p {
     display: flex;
     font-size: 1rem;
@@ -104,6 +94,21 @@ img.header {
     margin: 0 5px 0 5px;
 }
 
+.socialLink {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 5px 0 5px;
+}
+
+.socialIcon {
+    height: 20px;
+    width: 20px;
+}
+
+.socialText {
+    display: none;
+}
+
 .container {
     display: flex;
     flex-flow: column nowrap;
@@ -129,4 +134,14 @@ img.header {
 #amLogo {
     height: 80px;
     width: 80px;
+}
+
+#socialMenu {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#twitterIcon, #githubIcon, #mailIcon {
+    height: 20px;
+    width: 20px;
 }
