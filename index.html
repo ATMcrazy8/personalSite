@@ -1,37 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <link rel="shortcut icon" href="Media/Images/AMmountainsTransparent.png" /> <!--32x32 image for favicon-->
+        <title>Austin Mans Personal Site</title>
+        <meta name="description" content="Web Services by Austin Mans. Repository and expos&eacute;. Contact Info and more information included.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <div class="header">
             <img src="Media/Images/AMmountainsTransparent.png" alt="personalSite logo leading back to home page" id="amLogo">
             <div class="navBar">
-                <span>Folder</span>
-                <span>Contact</span>
-                <span>About</span>
+                <span class="navMenuTop">Folder</span>
+                <span class="navMenuTop">Contact</span>
+                <span class="navMenuTop">About</span>
             </div>
         </div>
     </head>
     <body>
         <div class="container top right" id="header">
             <h1>Austin Mans</h1>
-            <h5>@ATMcrazy8 // austin.t.mans@gmail.com</h5>
+            <div id="socialMenu">
+                <!--Add another icon to hold social link icons. Expand on hover to reaveal others, expand those on hover as well.-->
+                <a href="https://twitter.com/ATMcrazy8" target="_blank" class="socialLink">
+                    <span class="socialIcon">
+                        <img src="Media/Icons/twitter.svg" alt="Twitter icon" id="twitterIcon">
+                    </span>
+                    <span class="socialText">
+                        @ATMcrazy8
+                    </span>
+                </a>
+                <a href="https://github.com/ATMcrazy8" target="_blank" class="socialLink">
+                    <span class="socialIcon">
+                        <img src="Media/Icons/github-social.svg" alt="Github icon" id="githubIcon">
+                    </span>
+                    <span class="socialText">
+                        @ATMcrazy8
+                    </span>
+                </a>
+                <div class="socialLink"> <!--Need to add mailing function-->
+                    <span class="socialIcon">
+                        <img src="Media/Icons/envelope.svg" alt="Mail envelope icon" id="mailIcon">
+                    </span>
+                    <span class="socialText">
+                        austin.t.mans@gmail.com
+                    </span>
+                </div>
+            </div>
         </div>
         <div class="container left">
             <h2>A place for my mind to wonder</h2>
-            <img>
+            <!--<img alt="placeholder">-->
         </div>
         <div class="container right">
             <h2>For my creativity to be tested</h2>
-            <img>
+            <!--<img alt="placeholder">-->
         </div>
         <div class="container left">
             <h2>And to look back on my growth</h2>
-            <img>
+            <!--<img alt="placeholder">-->
         </div>
         <script src="index.js" async defer></script>
     </body>
