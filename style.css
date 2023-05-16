@@ -54,6 +54,11 @@ p {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /*Attributes*/
 
 
@@ -81,7 +86,27 @@ img.header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 30%;
+    width: 20vw;
+    min-width: fit-content;
+}
+
+.navMenuTop {
+    margin: 0 5px 0 5px;
+}
+
+.socialLink {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 5px 0 5px;
+}
+
+.socialIcon {
+    height: 20px;
+    width: 20px;
+}
+
+.socialText {
+    display: none;
 }
 
 .container {
@@ -109,4 +134,14 @@ img.header {
 #amLogo {
     height: 80px;
     width: 80px;
+}
+
+#socialMenu {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#twitterIcon,#githubIcon,#mailIcon {
+    height: 20px;
+    width: 20px;
 }
