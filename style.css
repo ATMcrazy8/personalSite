@@ -4,6 +4,27 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*Color Pallet*/
+
+.cherryBlossom {
+    color: #f3e8ee;
+}
+
+.powderBlue {
+    color: #9af0ff;
+}
+
+.electricViolet {
+    color: #b0b0ff;
+}
+
+.dunkelBurg {
+    color: #32213a;
+}
+
+.deepIndigo {
+    color: #1f1524;
+}
 
 
 /*Elements*/
@@ -16,7 +37,7 @@ html {
 head, body {
     display: flex;
     flex-flow: column nowrap;
-    
+    background-color: #1f1524;
 }
 
 body {
@@ -32,6 +53,7 @@ h1 {
     margin-block-end: 0;
     margin: 0;
     padding: 0;
+    color: #9af0ff;
 }
 
 h2 {
@@ -42,6 +64,7 @@ h2 {
     margin-block-end: 0;
     margin: 0;
     padding: 0;
+    color: #9af0ff;
 }
 
 p {
@@ -52,11 +75,12 @@ p {
     margin-block-end: 0;
     margin: 0;
     padding: 0;
+    color: #9af0ff;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #9af0ff;
 }
 
 /*Attributes*/
@@ -65,12 +89,19 @@ a {
 
 /*Classes*/
 .header {
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     overflow-x: hidden;
     margin: 0 0 40px 0;
+    background-color: #1f1524;
+    background-repeat: no-repeat;
+    background-size: 100% 5%;
+    background-position: 100% 100%;
+    border-bottom: 1px double #32213a;
 }
 
 img.header {
@@ -92,6 +123,7 @@ img.header {
 
 .navMenuTop {
     margin: 0 5px 0 5px;
+    color: #b0b0ff;
 }
 
 .socialLink {
