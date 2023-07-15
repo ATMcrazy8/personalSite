@@ -32,12 +32,14 @@ html {
     --electricViolet20: #b0b0ff20;
     --dunkelBurg: #13131b;
     --dunkelBurgf0: #13131bf0;
+    --dunkelBurgd0: #13131bd0;
     --dunkelBurgb0: #13131bb0;
     --dunkelBurg80: #13131b80;
     --dunkelBurg40: #13131b40;
     --dunkelBurg20: #13131b20;
     --deepSwamp: #00110e;
     --deepSwampf0: #00110ef0;
+    --deepSwampd0: #00110ed0;
     --deepSwampb0: #00110eb0;
     --deepSwamp80: #00110e80;
     --deepSwamp40: #00110e40;
@@ -95,20 +97,28 @@ a {
     color: var(--vibrantTeal);
 }
 
-.header {
+
+#headerWrapper {
     position: sticky;
     top: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 0 40px 0;
+    background: var(--deepSwampd0);
+}
+.header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 40px 0;
-    background: var(--deepSwamp);
+    min-width: 100%;
     border-bottom: 0.25vh solid var(--electricViolet);
 }
 
 img.header {
     justify-content: flex-start;
+    height: 80px;
 }
 
 .header.navBar {
@@ -151,15 +161,6 @@ img.header {
     display: none;
 }
 
-.darkCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 99%;
-    width: 99%;
-    background-color: var(--deepSwamp);
-}
-
 .container {
     display: flex;
     flex-flow: column nowrap;
@@ -176,6 +177,15 @@ img.header {
     box-shadow: 0 0 50px 2px var(--electricViolet40);
 }
 
+.exampleCard{
+    margin: 100px 0 0;
+}
+
+.titles {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .right {
     align-items: flex-end;
 }
@@ -187,7 +197,7 @@ img.header {
 .container.top {
     justify-content:space-around;
     height: 15vh;
-    padding: 0 0 30vh 0;
+    padding: 0 0 10vh 0;
 }
 
 #amLogo {
@@ -209,12 +219,17 @@ img.header {
     max-width: 20px;
 }
 
-.addressWrapper {
+.footerWrapper {
     display: flex;
     flex-flow: column nowrap;
-    align-items: end;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
+}
+#addressWrapperLeft {
+    align-items: end;
+}
+#addressWrapperMid {
+    margin: -5px 0 0;
 }
 
 .address {
@@ -223,3 +238,4 @@ img.header {
     font-size: 14px;
     color: var(--keyLimeCreamb0);
 }
+
