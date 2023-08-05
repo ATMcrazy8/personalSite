@@ -1,34 +1,50 @@
 /*Global*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/*Color Pallet*/
-
-.cherryBlossom {
-    color: #f3e8ee;
-}
-
-.powderBlue {
-    color: #9af0ff;
-}
-
-.electricViolet {
-    color: #b0b0ff;
-}
-
-.dunkelBurg {
-    color: #32213a;
-}
-
-.deepIndigo {
-    color: #1f1524;
-}
 
 
 /*Elements*/
 html {
+    /** Color Variables **/
+    --keyLimeCream: #e7f3f0;
+    --keyLimeCreamf0: #e7f3f0f0;
+    --keyLimeCreamb0: #e7f3f0b0;
+    --keyLimeCream80: #e7f3f080;
+    --keyLimeCream40: #e7f3f040;
+    --keyLimeCream20: #e7f3f020;
+    --vibrantTeal: #44ffd1;
+    --vibrantTealf0: #44ffd1f0;
+    --vibrantTealb0: #44ffd1b0;
+    --vibrantTeal80: #44ffd180;
+    --vibrantTeal40: #44ffd140;
+    --vibrantTeal20: #44ffd120;
+    --midForest: #0b5351;
+    --midForestf0: #0b5351f0;
+    --midForestb0: #0b5351b0;
+    --midForest80: #0b535180;
+    --midForest40: #0b535140;
+    --midForest20: #0b535120;
+    --electricViolet: #b0b0ff;
+    --electricVioletf0: #b0b0fff0;
+    --electricVioletb0: #b0b0ffb0;
+    --electricViolet80: #b0b0ff80;
+    --electricViolet40: #b0b0ff40;
+    --electricViolet20: #b0b0ff20;
+    --dunkelBurg: #13131b;
+    --dunkelBurgf0: #13131bf0;
+    --dunkelBurgd0: #13131bd0;
+    --dunkelBurgb0: #13131bb0;
+    --dunkelBurg80: #13131b80;
+    --dunkelBurg40: #13131b40;
+    --dunkelBurg20: #13131b20;
+    --deepSwamp: #00110e;
+    --deepSwampf0: #00110ef0;
+    --deepSwampd0: #00110ed0;
+    --deepSwampb0: #00110eb0;
+    --deepSwamp80: #00110e80;
+    --deepSwamp40: #00110e40;
+    --deepSwamp20: #00110e20;
+
     display: flex;
     flex-flow: column nowrap;  
     margin: 0;
@@ -37,7 +53,11 @@ html {
 head, body {
     display: flex;
     flex-flow: column nowrap;
-    background-color: #1f1524;
+    background-color: var(--deepSwamp);
+}
+
+head, body, footer {
+    font-family: Montserrat, sans-serif;
 }
 
 body {
@@ -45,67 +65,60 @@ body {
     margin: 0 15% 0 15%;
 }
 
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 80px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding: 0;
+    color: var(--vibrantTeal);
+}
 h1 {
-    display: flex;
     font-size: 2.5rem;
-    font-weight: 800;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: 0;
-    padding: 0;
-    color: #9af0ff;
+    font-weight: 500;
 }
-
 h2 {
-    display: flex;
     font-size: 2rem;
-    font-weight: 800;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: 0;
-    padding: 0;
-    color: #9af0ff;
+    font-weight: 400;
 }
-
 p {
-    display: flex;
     font-size: 1rem;
-    font-weight: 300;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: 0;
-    padding: 0;
-    color: #9af0ff;
+    font-weight: 200;
 }
-
 a {
     text-decoration: none;
-    color: #9af0ff;
+    color: var(--vibrantTeal);
 }
 
-/*Attributes*/
 
-
-
-/*Classes*/
-.header {
+#headerWrapper {
     position: sticky;
     top: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 0 40px 0;
+    background: var(--deepSwampd0);
+}
+.header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    overflow-x: hidden;
-    margin: 0 0 40px 0;
-    background-color: #1f1524;
-    background-repeat: no-repeat;
-    background-size: 100% 5%;
-    background-position: 100% 100%;
-    border-bottom: 1px double #32213a;
+    min-width: 100%;
+    border-bottom: 0.25vh solid var(--electricViolet);
 }
 
 img.header {
     justify-content: flex-start;
+    height: 80px;
 }
 
 .header.navBar {
@@ -123,18 +136,25 @@ img.header {
 
 .navMenuTop {
     margin: 0 5px 0 5px;
-    color: #b0b0ff;
+    color: var(--electricViolet);
 }
 
 .socialLink {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     margin: 0 5px 0 5px;
 }
 
 .socialIcon {
-    height: 20px;
-    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(125deg, var(--keyLimeCream), var(--deepSwamp), #000000, var(--deepSwamp));
+    border-radius: 50%;
 }
 
 .socialText {
@@ -145,6 +165,25 @@ img.header {
     display: flex;
     flex-flow: column nowrap;
     height: 400px;
+    justify-content: flex-start;
+}
+
+.glassCard {
+    background-image: linear-gradient(310deg, var(--electricViolet20) 10%, var(--dunkelBurg20) 60%, var(--electricViolet20) 90%, var(--keyLimeCream20));
+    border: 2px solid var(--electricViolet20);
+    border-radius: 40px;
+    margin: 60px 0;
+    padding: 40px;
+    box-shadow: 0 0 50px 2px var(--electricViolet40);
+}
+
+.exampleCard{
+    margin: 100px 0 0;
+}
+
+.titles {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .right {
@@ -158,10 +197,8 @@ img.header {
 .container.top {
     justify-content:space-around;
     height: 15vh;
-    padding: 0 0 30vh 0;
+    padding: 0 0 10vh 0;
 }
-
-/*IDs*/
 
 #amLogo {
     height: 80px;
@@ -171,6 +208,8 @@ img.header {
 #socialMenu {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #twitterIcon,#gitSocialIcon,#mailIcon {
@@ -179,3 +218,24 @@ img.header {
     max-height: 20px;
     max-width: 20px;
 }
+
+.footerWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
+}
+#addressWrapperLeft {
+    align-items: end;
+}
+#addressWrapperMid {
+    margin: -5px 0 0;
+}
+
+.address {
+    text-align: right;
+    line-height: 15px;
+    font-size: 14px;
+    color: var(--keyLimeCreamb0);
+}
+

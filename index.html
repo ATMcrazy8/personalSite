@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,24 @@
         <meta name="description" content="Web Services by Austin Mans. Repository and expos&eacute;. Contact Info and more information included.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <div id="headerBackground">
+    </head>
+
+
+
+    <body>
+
+        <div id="headerWrapper"> <!--BEGIN header & nav bar-->
             <div class="header">
-                <img src="Media/SVGs/AMmountains.svg" alt="personalSite logo leading back to home page" id="amLogo">
+                <img src="Media/SVGs/AMmountains.svg" alt="personalSite logo leading back to home page" id="amLogo" height="80px" width="auto">
                 <div class="navBar">
                     <span class="navMenuTop">Folder</span>
                     <span class="navMenuTop">Contact</span>
                     <span class="navMenuTop">About</span>
                 </div>
             </div>
-        </div>
-    </head>
-    <body>
-        <div class="container top right">
+        </div> <!--END header & nav bar-->
+
+        <div class="container top right"> <!--BEGIN name & socials-->
             <h1>Austin Mans</h1>
             <div id="socialMenu">
                 <!--Add another icon to hold social link icons. Expand on hover to reaveal others, expand those on hover as well.-->
@@ -49,19 +55,74 @@
                     </span>
                 </div>
             </div>
-        </div>
-        <div class="container left">
-            <h2>A place for my mind to wonder</h2>
-            <!--<img alt="placeholder">-->
-        </div>
-        <div class="container right">
-            <h2>For my creativity to be tested</h2>
-            <!--<img alt="placeholder">-->
-        </div>
-        <div class="container left">
-            <h2>And to look back on my growth</h2>
-            <!--<img alt="placeholder">-->
-        </div>
+        </div> <!--END name & socials-->
+
+        <div class="exampleCard"> <!--BEGIN 'modern' container-->
+            <div class="titles left">
+                <h2>Sleek, Modern Design</h2>
+            </div>
+            <div class="container left glassCard">
+                <div class="interiorCard"></div>
+            </div>
+        </div> <!--END 'modern' container-->
+ 
+        <div class="exampleCard"> <!--BEGIN 'retro' container-->
+            <div class="titles right">
+                <h2>A Retro Look</h2>
+            </div>
+            <div class="container right glassCard">
+                <div class="interiorCard"></div>
+            </div>
+        </div> <!--END 'retro' container-->
+
+        <div class="exampleCard"> <!--BEGIN 'professional' container-->
+            <div class="titles left">
+                <h2>A Site for Today's Professionals</h2>
+            </div>
+            <div class="container left glassCard">
+                <div class="interiorCard"></div>
+            </div>
+        </div> <!--END 'professional' container-->
+
+        <div class="exampleCard"> <!--BEGIN 'imagination' container-->
+            <div class="titles right">
+                <h2>Or Whatever Your Creativity Demands</h2>
+            </div>
+            <div class="container right glassCard">
+                <div class="interiorCard"></div>
+            </div>
+        </div> <!--END 'imagination' container-->
+
         <script src="index.js" async defer></script>
-    </body>
+
+    </body> <!--END body-->
+
+
+
+    <footer>
+
+        <div class="footerWrapper" id="addressWrapperLeft"> <!--BEGIN footer left-->
+            <p class="address city" id="footerCity">
+                Hudson,
+            </p>
+            <p class="address state" id="footerState">
+                WI
+            </p>
+        </div> <!--END footer left-->
+
+        <div class="footerWrapper" id="addressWrapperMid"> <!--BEGIN footer mid-->
+            <img src="Media/SVGs/AMmountainsFooter.svg" alt="Dimmed AM mounttain-style logo" class="address logo" id="footerLogo" height="80px" width="auto">
+        </div> <!--END footer mid-->
+
+        <div class="footerWrapper" id="addressWrapperRight"> <!--BEGIN footer right-->
+            <p class="address email" id="footerEmail">
+                austin.t.mans@gmail.com
+            </p>
+            <p class="address phone" id="fotoerPhone">
+                (952) 288-4408
+            </p>
+        </div> <!--END footer right-->
+
+    </footer>
+
 </html>

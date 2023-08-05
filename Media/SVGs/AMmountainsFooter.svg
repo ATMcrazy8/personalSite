@@ -9,10 +9,10 @@
 <g>
 	<defs>
         <linearGradient id="logoGradient" x1="0%" y1="0%" x2="33%" y2="88%" x3="88%" y3="33%" x4="100%" y4="100%">
-        <stop offset="0%" stop-color="#b0b0ff" />
-		<stop offset="33%" stop-color="#b0b0ff" />
-		<stop offset="88%" stop-color="#44ffd1" />
-        <stop offset="100%" stop-color="#44ffd1" />
+        <stop offset="0%" stop-color="#b0b0ff80" />
+		<stop offset="33%" stop-color="#b0b0ff80" />
+		<stop offset="88%" stop-color="#e7f3f080" />
+        <stop offset="100%" stop-color="#e7f3f080" />
         </linearGradient>
     </defs>
 	<path class="st0" d="M1509.5,247.5c-0.1-1.1,0.6-1.8,1.1-2.6c6.1-10,12.3-20,18.4-30c3.2-5.3,6.4-10.5,9.6-15.9
