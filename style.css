@@ -53,7 +53,7 @@ html {
 head, body {
     display: flex;
     flex-flow: column nowrap;
-    background-color: var(--deepSwamp);
+    background-color: var(--dunkelBurg);
 }
 
 head, body, footer {
